@@ -1,0 +1,3 @@
+If we are given a bitonic array
+Find the peak element 
+do two binary search. one for ascending order and another for descending order
