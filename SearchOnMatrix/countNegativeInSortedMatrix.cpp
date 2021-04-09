@@ -14,6 +14,10 @@ public:
                 i ++;
                 j = 0;
             }
+            else if (j == col -1){
+                i ++;
+                j = 0;
+            }
             else {
                 j ++;
             }
@@ -23,3 +27,11 @@ public:
 
     }
 };
+int main() {
+    vector<vector<int>> mat = {{5,1,0},{-5,-5,-5}};
+    Solution obj;
+    cout<< obj.countNegatives(mat);
+
+
+    return 0;
+}
