@@ -39,7 +39,7 @@ int main() {
 
     return 0;
 }
-//O(n + log(m))
+//O(nlogm)
 // in this optimized approach we will just the first index using binary search.
 #include <bits/stdc++.h>
 using namespace std;
