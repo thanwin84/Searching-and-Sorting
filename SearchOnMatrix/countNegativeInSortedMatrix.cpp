@@ -1,3 +1,4 @@
+#time: O(n+m)
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
