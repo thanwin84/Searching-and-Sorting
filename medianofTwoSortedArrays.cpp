@@ -1,3 +1,4 @@
+// time: O(logmin(a, b))
 #include <bits/stdc++.h>
 using namespace std;
 class Solution {
