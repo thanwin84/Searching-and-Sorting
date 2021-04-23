@@ -37,7 +37,8 @@ public:
         return pindex;
     }
 };
-//improve quicksort using randomized
+## Randomized quicksort
+## Since the partition procedure has linear time complexity, the overall time complexity, in this case, is quadratic. This is the worst-case scenario for our input array.
 class Solution
 {
 public:
@@ -46,7 +47,7 @@ public:
     {
         // code here
         if (low < high){
-            int pindex= partition(arr, low, high);
+            int pindex= RandomizedPartition(arr, low, high);
             quickSort(arr, low, pindex -1);
             quickSort(arr, pindex + 1, high);
         }
@@ -54,19 +55,10 @@ public:
 
 public:
 
-    int partition (int arr[], int low, int high)
-    {
-        // Your code here
+
+    int RandomizedPartition(int arr[], int low, int high){
         srand(time(nullptr));
         int random = low + rand() % (high - low);
-        int temp = arr[random];
-        arr[random] = arr[high];
-        arr[high] = temp;
-        int pindex = partition2(arr, low, high);
-        return pindex;
-
-    }
-    int partition2(int arr[], int low, int high){
         int pindex = 0;
         int pivot = arr[high];
         for (int i = 0; i < high; i++){
