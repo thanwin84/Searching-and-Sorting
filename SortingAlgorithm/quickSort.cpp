@@ -1,4 +1,7 @@
 //picking the last element as pivot
+//O(nlogn) - average case running time
+//O(n^2) - worst case but it can be avoided using ramdomized version
+//randomized version gives high probability of o(nlogn)
 using namespace std;
 class Solution
 {
