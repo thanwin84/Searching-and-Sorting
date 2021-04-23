@@ -1,4 +1,5 @@
 //mergesort with extraa space
+//stable - not in place - time:o(nlogn) - space: O(n)
 #include <bits/stdc++.h>
 using namespace std;
 class Solution{
